@@ -15,7 +15,7 @@ body{
 }
 nav{
   background: #0082e6;
-  height: 80px;
+  height: 40px;
   width: 100%;
 }
 label.logo{
@@ -75,7 +75,7 @@ a.active,a:hover{
     width: 50%;
     height: 50vh;
     background: #2c3e50;
-    top: 80px;
+    top: 40px;
     left: -100%;
     text-align: center;
     transition: all .5s;
