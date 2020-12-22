@@ -3,7 +3,6 @@ background: #c5c5c5;
 font-family: system-ui;
 }
 
-
 *{
   padding: 0;
   margin: 0;
@@ -11,64 +10,47 @@ font-family: system-ui;
   list-style: none;
   box-sizing: border-box;
 }
+body{
+  font-family: montserrat;
+}
 nav{
-  /*background: #0082e6;*/
-  height: 50px;
+  background: #0082e6;
+  height: 80px;
   width: 100%;
 }
-
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
 nav ul{
   float: right;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 nav ul li{
   display: inline-block;
-  line-height: 47px;
+  line-height: 80px;
   margin: 0 5px;
 }
 nav ul li a{
   color: white;
-  font-size: 15px;
-  padding: 7px 10px;
-  border-radius: 0px;
-  text-transform: system-ui;
-
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
 }
-
-nav ul li .gau a{
-  color: white;
-  font-size: 15px;
-  /*padding: 7px 10px;*/
-  border-radius: 0px;
-  text-transform: system-ui;
-  position: absolute;
-  top: 0%;
-  left:6.5%;
-  background: red;
-}
-
-nav ul li .dro a{
-  color: white;
-  font-size: 15px;
-  padding: 7px 10px;
-  border-radius: 0px;
-  text-transform: system-ui;
-  position: absolute;
-  top: 0%;
-  right:6.5%;
-  background: red;
-}
-
 a.active,a:hover{
-  background: transparent;
+  background: #1b9bff;
   transition: .5s;
 }
 .checkbtn{
   font-size: 30px;
   color: white;
   float: right;
-  line-height: 47px;
-  margin-right: 10px;
+  line-height: 80px;
+  margin-right: 40px;
   cursor: pointer;
   display: none;
 }
@@ -79,25 +61,9 @@ a.active,a:hover{
   label.logo{
     font-size: 30px;
     padding-left: 50px;
-    padding-right: 50px;
   }
   nav ul li a{
     font-size: 16px;
-  }
- nav ul li .gau a{
-    font-size: 16px;
-position: absolute;
-  top: 0%;
-  left:0%;
-  }
-nav ul li .dro a{
-    font-size: 16px;
-position: absolute;
-  top: 10%;
-  left: 0%;
-  }
- nav {
-background: #0082e6;
   }
 }
 @media (max-width: 858px){
@@ -106,37 +72,20 @@ background: #0082e6;
   }
   ul{
     position: fixed;
-    width: 50%;
-    height: 32vh;
+    width: 100%;
+    height: 100vh;
     background: #2c3e50;
-    top: 50px;
+    top: 80px;
     left: -100%;
-    text-align: left;
+    text-align: center;
     transition: all .5s;
   }
-
   nav ul li{
-    display: block;
-    margin: 10px 0;
-    line-height: 30px;
-  }
-  nav ul li .gau{
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-nav ul li .dro{
     display: block;
     margin: 50px 0;
     line-height: 30px;
   }
   nav ul li a{
-    font-size: 20px;
-  }
-nav ul li .gau a{
-    font-size: 20px;
-  }
-nav ul li .dro a{
     font-size: 20px;
   }
   a:hover,a.active{
